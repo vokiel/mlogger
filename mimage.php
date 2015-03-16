@@ -42,6 +42,6 @@ foreach ( $log as $line ) {
     imagefilledellipse($im, $x, $y, 17, 17, $code === 272 ? $red : $blue);
 }
 
-imagestring($im, 2, 10, 10, count($log) . ' clicks', 0x000000);
+imagestring($im, 2, 10, 10, count($log) . ' clicks', 0xFFBF00);
 
 imagepng($im, 'mouse.png');
